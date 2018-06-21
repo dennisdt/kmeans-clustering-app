@@ -26,7 +26,7 @@ py.sign_in(username, api_key)
 
 app = Dash(__name__)
 
-application = app.server
+app = app.server
 
 # load the iris dataset
 iris = datasets.load_iris()
@@ -150,4 +150,4 @@ def update_graph(x_val, y_val, n):
 	return fig
 
 if __name__ == '__main__':
-    application.run(debug=True)
+    app.run(debug=True)
